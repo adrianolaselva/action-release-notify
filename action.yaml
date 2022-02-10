@@ -1,0 +1,11 @@
+name: PayGoWeb
+author: Adriano La Selva
+description: GitHub action upload file
+branding:
+    color: blue
+    icon: check-square
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+    - ${{ inputs.who-to-greet }}
